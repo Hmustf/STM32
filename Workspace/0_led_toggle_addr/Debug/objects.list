@@ -1,0 +1,6 @@
+"./Src/drv.o"
+"./Src/main.o"
+"./Src/syscalls.o"
+"./Src/sysmem.o"
+"./Src/uti.o"
+"./Startup/startup_stm32f401retx.o"

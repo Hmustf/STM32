@@ -1,0 +1,4 @@
+../Src/drv.c:14:6:sys_init	8	static
+../Src/drv.c:25:6:toggle_led	8	static
+../Src/drv.c:32:6:set_led_high	8	static
+../Src/drv.c:38:6:set_led_low	8	static

@@ -1,0 +1,16 @@
+
+#include "drv.h"
+#include "uti.h"
+
+
+int main(void)
+{
+    sys_init();
+
+    while (1)
+    {
+        toggle_led();
+        counter_delay(100000);
+    }
+    
+}

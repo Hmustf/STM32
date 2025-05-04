@@ -1,0 +1,4 @@
+../Src/uti.c:8:6:set_bit	1
+../Src/uti.c:18:6:clear_bit	1
+../Src/uti.c:28:6:toggle_bit	1
+../Src/uti.c:33:6:counter_delay	2

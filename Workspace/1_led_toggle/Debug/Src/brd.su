@@ -1,0 +1,4 @@
+../Src/brd.c:4:6:brd_init	8	static
+../Src/brd.c:11:6:toggle_led	8	static
+../Src/brd.c:16:6:set_led_high	8	static
+../Src/brd.c:21:6:set_led_low	8	static

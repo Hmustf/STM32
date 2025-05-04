@@ -1,0 +1,7 @@
+#include "uti.h"
+
+inline void counter_delay(size_t counter)
+{
+    for (size_t i = 0; i < counter; i++)
+    ;
+}
