@@ -1,0 +1,9 @@
+{
+    "files.associations": {
+        "stdint.h": "c",
+        "config.h": "c",
+        "system.h": "c",
+        "drv.h": "c",
+        "gpio.h": "c"
+    }
+}

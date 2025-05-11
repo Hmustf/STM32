@@ -1,0 +1,5 @@
+../Src/drivers/gpio.c:40:6:gpio_init	1
+../Src/drivers/gpio.c:51:6:onboard_led_set	2
+../Src/drivers/gpio.c:64:6:onboard_led_toggle	1
+../Src/drivers/gpio.c:69:8:onboard_btn_pressed	1
+../Src/drivers/gpio.c:74:8:onboard_btn_status	1

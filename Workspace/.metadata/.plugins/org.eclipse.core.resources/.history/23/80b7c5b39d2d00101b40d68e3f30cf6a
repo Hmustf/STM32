@@ -1,0 +1,30 @@
+#include "uart.h"
+
+char rchar = 10;
+
+int main(void)
+{
+
+	uart2_init();
+
+	while(1)
+	{
+		rchar = uart2_read();
+		if(rchar == 1)
+		{
+			uart2_write_string("Reicived 1\n");	
+			for (volatile int i = 0; i < 100000; ++i);
+		}
+		else if(rchar == 2)
+		{
+			uart2_write_string("Reicived 2\n");	
+			for (volatile int i = 0; i < 100000; ++i);
+		}
+		else
+		{
+			uart2_write_string("No data reicived 2\n");	
+			for (volatile int i = 0; i < 100000; ++i);
+		}
+	}
+}
+

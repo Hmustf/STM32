@@ -1,0 +1,11 @@
+../Src/drivers/uart.c:52:13:uart2_gpio_config	1
+../Src/drivers/uart.c:67:13:uart2_clock_enable	1
+../Src/drivers/uart.c:73:17:compute_uart_bd	1
+../Src/drivers/uart.c:78:13:uart2_baudrate_config	1
+../Src/drivers/uart.c:85:13:uart2_enable_tx	1
+../Src/drivers/uart.c:91:13:uart2_enable_rx	1
+../Src/drivers/uart.c:97:13:uart2_enable	1
+../Src/drivers/uart.c:103:6:uart2_init	1
+../Src/drivers/uart.c:113:6:uart2_read	2
+../Src/drivers/uart.c:121:6:uart2_write	2
+../Src/drivers/uart.c:130:6:uart2_write_string	2

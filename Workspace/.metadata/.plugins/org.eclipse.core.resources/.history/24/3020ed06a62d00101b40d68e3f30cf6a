@@ -1,0 +1,28 @@
+#include "drivers\drv.h"
+
+char rchar;
+
+int main(void)
+{
+    drv_init();
+
+    while (1)
+    {
+        rchar = uart2_read();
+
+        if (rchar == '1')
+        {
+            uart2_write_string("Received 1\n");
+        }
+        else if (rchar == '2')
+        {
+            uart2_write_string("Received 2\n");
+        }
+        else
+        {
+            uart2_write_string("Other character received\n");
+        }
+
+        for (volatile int i = 0; i < 100000; ++i);  // Delay
+    }
+}

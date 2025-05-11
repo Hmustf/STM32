@@ -1,0 +1,4 @@
+../Src/drivers/adc.c:33:6:adc_init	4	static
+../Src/drivers/adc.c:51:6:start_conversion	4	static
+../Src/drivers/adc.c:56:10:adc_read	4	static
+../Src/drivers/adc.c:64:10:adc_get_sample	8	static

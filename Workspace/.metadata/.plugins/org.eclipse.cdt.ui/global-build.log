@@ -1,21 +1,35 @@
-16:19:51 **** Incremental Build of configuration Debug for project 4_gpio_bsrr ****
+11:00:09 **** Incremental Build of configuration Debug for project 10-Combined ****
 make -j7 all 
-arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F401RETx -DSTM32F4 -DSTM32F401xE -c -I../Inc -I/Users/hmustf/Documents/STM32/Workspace/Driver_lib/CMSIS/Include -I/Users/hmustf/Documents/STM32/Workspace/Driver_lib/CMSIS/Device/ST/STM32F4xx/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
-arm-none-eabi-gcc -o "4_gpio_bsrr.elf" @"objects.list"   -mcpu=cortex-m4 -T"/Users/hmustf/Documents/STM32/Workspace/4_gpio_bsrr/STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="4_gpio_bsrr.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: 4_gpio_bsrr.elf
+arm-none-eabi-gcc "../Src/adc.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F401RETx -DSTM32F4 -DSTM32F401xE -c -I../Inc -I/Users/hmustf/Documents/STM32/Workspace/Driver_lib/CMSIS/Device/ST/STM32F4xx/Include -I/Users/hmustf/Documents/STM32/Workspace/Driver_lib/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/adc.d" -MT"Src/adc.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/adc.o"
+arm-none-eabi-gcc "../Src/drv.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F401RETx -DSTM32F4 -DSTM32F401xE -c -I../Inc -I/Users/hmustf/Documents/STM32/Workspace/Driver_lib/CMSIS/Device/ST/STM32F4xx/Include -I/Users/hmustf/Documents/STM32/Workspace/Driver_lib/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/drv.d" -MT"Src/drv.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/drv.o"
+arm-none-eabi-gcc "../Src/gpio.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F401RETx -DSTM32F4 -DSTM32F401xE -c -I../Inc -I/Users/hmustf/Documents/STM32/Workspace/Driver_lib/CMSIS/Device/ST/STM32F4xx/Include -I/Users/hmustf/Documents/STM32/Workspace/Driver_lib/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/gpio.d" -MT"Src/gpio.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/gpio.o"
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F401RETx -DSTM32F4 -DSTM32F401xE -c -I../Inc -I/Users/hmustf/Documents/STM32/Workspace/Driver_lib/CMSIS/Device/ST/STM32F4xx/Include -I/Users/hmustf/Documents/STM32/Workspace/Driver_lib/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc "../Src/syscalls.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F401RETx -DSTM32F4 -DSTM32F401xE -c -I../Inc -I/Users/hmustf/Documents/STM32/Workspace/Driver_lib/CMSIS/Device/ST/STM32F4xx/Include -I/Users/hmustf/Documents/STM32/Workspace/Driver_lib/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/syscalls.o"
+arm-none-eabi-gcc "../Src/sysmem.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F401RETx -DSTM32F4 -DSTM32F401xE -c -I../Inc -I/Users/hmustf/Documents/STM32/Workspace/Driver_lib/CMSIS/Device/ST/STM32F4xx/Include -I/Users/hmustf/Documents/STM32/Workspace/Driver_lib/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/sysmem.o"
+arm-none-eabi-gcc "../Src/system.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F401RETx -DSTM32F4 -DSTM32F401xE -c -I../Inc -I/Users/hmustf/Documents/STM32/Workspace/Driver_lib/CMSIS/Device/ST/STM32F4xx/Include -I/Users/hmustf/Documents/STM32/Workspace/Driver_lib/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/system.d" -MT"Src/system.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/system.o"
+arm-none-eabi-gcc "../Src/uart.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F401RETx -DSTM32F4 -DSTM32F401xE -c -I../Inc -I/Users/hmustf/Documents/STM32/Workspace/Driver_lib/CMSIS/Device/ST/STM32F4xx/Include -I/Users/hmustf/Documents/STM32/Workspace/Driver_lib/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/uart.d" -MT"Src/uart.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/uart.o"
+arm-none-eabi-gcc -o "10-Combined.elf" @"objects.list"   -mcpu=cortex-m4 -T"/Users/hmustf/Documents/STM32/Workspace/10-Combined/STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="10-Combined.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 10-Combined.elf
  
-arm-none-eabi-size  4_gpio_bsrr.elf 
-arm-none-eabi-objdump -h -S 4_gpio_bsrr.elf  > "4_gpio_bsrr.list"
+arm-none-eabi-size  10-Combined.elf 
+arm-none-eabi-objdump -h -S 10-Combined.elf  > "10-Combined.list"
    text	   data	    bss	    dec	    hex	filename
-    772	      0	   1568	   2340	    924	4_gpio_bsrr.elf
+   1340	      0	   1568	   2908	    b5c	10-Combined.elf
 Finished building: default.size.stdout
  
-Finished building: 4_gpio_bsrr.list
+Finished building: 10-Combined.list
  
-16:20:21 **** Incremental Build of configuration Debug for project 4_gpio_bsrr ****
+11:00:21 **** Incremental Build of configuration Debug for project 10-Combined ****
 make -j7 all 
-arm-none-eabi-size  4_gpio_bsrr.elf 
+arm-none-eabi-size  10-Combined.elf 
    text	   data	    bss	    dec	    hex	filename
-    772	      0	   1568	   2340	    924	4_gpio_bsrr.elf
+   1340	      0	   1568	   2908	    b5c	10-Combined.elf
+Finished building: default.size.stdout
+ 
+11:48:05 **** Incremental Build of configuration Debug for project 10-Combined ****
+make -j7 all 
+arm-none-eabi-size  10-Combined.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1340	      0	   1568	   2908	    b5c	10-Combined.elf
 Finished building: default.size.stdout
  
