@@ -1,0 +1,4 @@
+../Src/adc.c:36:13:set_conversion_mode	16	static
+../Src/adc.c:49:6:adc_init	16	static
+../Src/adc.c:69:6:start_conversion	4	static
+../Src/adc.c:74:10:adc_read	4	static

@@ -24,6 +24,8 @@
 #include "bit_utils.h"
 #include "stm32f4xx.h"
 #include "drvdfn.h"
+#include <stdio.h>
+#include <stdarg.h>
 
 #define GPIOAEN_BIT            0
 #define MODER2_BIT             (2*MODER_FIELD_WIDTH)
@@ -133,4 +135,14 @@ void uart2_write_string(const char* str)
     {
         uart2_write(*str++);
     }
+}
+
+void uart2_printf(const char *format, ...)
+{
+    char buffer[128];  // Adjust size as needed
+    va_list args;
+    va_start(args, format);
+    vsnprintf(buffer, sizeof(buffer), format, args);
+    va_end(args);
+    uart2_write_string(buffer);
 }

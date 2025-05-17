@@ -1,0 +1,27 @@
+{
+  "version": 4,
+  "configurations": [
+    {
+      "name": "STM32CubeIDE",
+      "cStandard":     "gnu11",
+      "cppStandard":   "c++17",
+      "intelliSenseMode": "gcc-arm",
+      "defines": [
+        "STM32F401xE" 
+      ],
+      "includePath": [
+        "${workspaceFolder}/Inc",
+          "/Users/hmustf/Documents/STM32/Workspace/Driver_lib/CMSIS/Device/ST/STM32F4xx/Include",
+          "/Users/hmustf/Documents/STM32/Workspace/Driver_lib/CMSIS/Include"
+      ],
+      "browse": {
+        "path": [
+          "${workspaceFolder}/Inc",
+          "/Users/hmustf/Documents/STM32/Workspace/Driver_lib/CMSIS/Device/ST/STM32F4xx/Include",
+          "/Users/hmustf/Documents/STM32/Workspace/Driver_lib/CMSIS/Include"
+        ],
+        "limitSymbolsToIncludedHeaders": true
+      }
+    }
+  ]
+}

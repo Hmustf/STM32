@@ -1,0 +1,12 @@
+../Src/uart.c:114:13:uart2_gpio_config	4	static
+../Src/uart.c:134:13:uart2_clock_enable	4	static
+../Src/uart.c:146:17:compute_uart_bd	16	static
+../Src/uart.c:158:13:uart2_baudrate_config	24	static
+../Src/uart.c:170:13:uart2_enable_tx	4	static
+../Src/uart.c:181:13:uart2_enable_rx	4	static
+../Src/uart.c:192:13:uart2_enable	4	static
+../Src/uart.c:204:6:uart2_init	8	static
+../Src/uart.c:220:6:uart2_read	4	static
+../Src/uart.c:234:6:uart2_write	16	static
+../Src/uart.c:248:6:uart2_write_string	16	static
+../Src/uart.c:263:6:uart2_printf	144	static

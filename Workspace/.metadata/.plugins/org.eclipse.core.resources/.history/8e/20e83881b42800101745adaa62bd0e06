@@ -1,5 +1,0 @@
-#include <stddef.h>
-
-inline void counter_delay(size_t counter);
-
-

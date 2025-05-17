@@ -1,0 +1,58 @@
+/******************************************************************************
+ * @file    timer.c
+ * @author  Moustafa Hassanein
+ * @brief   timer driver implementation for STM32F4
+ * @version 1.0
+ * @date    2024-05-17
+ *
+ * @details
+ * This file implements the timer driver functionality for STM32F4 devices.
+ *
+ ******************************************************************************/
+
+/******************************************************************************
+ * Includes
+ ******************************************************************************/
+#include "drvdfn.h"
+#include "bit_utils.h"
+#include "stm32f4xx.h"
+#include "timer.h"
+#include <stdint.h>
+
+#define TIM2EN_BIT         0
+#define CR1_CEN__BIT       0
+#define SR_UIF_BIT         0
+
+
+static void tim_2_1hz_init(void);
+
+void timer_init(void)
+{
+    tim_2_1hz_init();
+}
+
+static void tim_2_1hz_init(void)
+{
+    /* Enable clock access to timer 2 */
+    SET_BIT(RCC->APB1ENR , TIM2EN_BIT);
+    /* Set prescaler value */
+    TIM2->PSC = 1600-1;
+    /* Set auto-reload value */
+    TIM2->ARR = 10000 - 1;
+    /* Clear Counter */
+    TIM2->CNT = 0;
+    /* Enable timer */
+    TIM2->CR1 = BIT(CR1_CEN__BIT);
+
+}
+
+void timer_1hz_status(void)
+{
+    while ((TIM2->SR & TIM_SR_UIF) == 0) { }
+    
+}
+
+void clear_1hz_tim2(void)
+{
+    BIT_CLEAR(TIM2->SR, SR_UIF_BIT);
+}

@@ -1,0 +1,13 @@
+{
+    "files.associations": {
+        "stdint.h": "c",
+        "stm32f4xx.h": "c",
+        "system.h": "c",
+        "drv.h": "c",
+        "uart.h": "c",
+        "drvdfn.h": "c",
+        "adc.h": "c",
+        "timer.h": "c",
+        "bit_utils.h": "c"
+    }
+}

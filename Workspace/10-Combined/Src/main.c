@@ -21,6 +21,8 @@ int main(void)
     while (1)
     {
         sensor_value = adc_get_sample();
+        uart2_printf("[SENSOR] ADC CH1 = %lu\r\n", sensor_value);
+        for (volatile int i = 0; i < 100000; ++i);
     }
 }
 

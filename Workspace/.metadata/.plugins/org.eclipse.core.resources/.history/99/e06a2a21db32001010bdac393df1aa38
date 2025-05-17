@@ -1,0 +1,52 @@
+/******************************************************************************
+ * @file    main.c
+ * @author  Moustafa Hassanein
+ * @brief   Main application
+ * @version 1.0
+ * @date    2024-10-01
+ ******************************************************************************/
+
+/******************************************************************************
+ * Includes
+ ******************************************************************************/
+
+#include "system.h"
+#include "stm32f4xx.h"  
+s
+
+uint32_t sensor_value;
+
+uint32_t GetAPB1Clock(void)
+{
+    // 1) Read bits 12:10 (PPRE1) from RCC->CFGR
+    uint32_t ppre1 = (RCC->CFGR & RCC_CFGR_PPRE1) >> RCC_CFGR_PPRE1_Pos;
+
+    // 2) Decode into division factor:
+    //    0b000–0b011 → divide by 1
+    //    0b100       → divide by 2
+    //    0b101       → divide by 4
+    //    0b110       → divide by 8
+    //    0b111       → divide by 16
+    uint32_t prescaler;
+    if (ppre1 < 4) {
+        prescaler = 1;
+    } else {
+        prescaler = (1U << (ppre1 - 3));
+    }
+
+    // 3) Compute APB1 clock
+    return  prescaler;
+}
+
+int main(void)
+{
+    sys_init();
+
+    while (1)
+    {
+        sensor_value = GetAPB1Clock();
+        uart2_printf("[SENSOR] ADC CH1 = %lu\r\n", sensor_value);
+        for (volatile int i = 0; i < 100000; ++i);
+    }
+}
+
